@@ -1,0 +1,43 @@
+2026-01-16 18:58:23,798 - __main__ - INFO - ============================================================
+2026-01-16 18:58:23,798 - __main__ - INFO - Starting Daily URL Scraper
+2026-01-16 18:58:23,798 - __main__ - INFO - ============================================================
+2026-01-16 18:58:23,798 - __main__ - INFO - Loading configuration from config/email_config.json...
+2026-01-16 18:58:23,798 - __main__ - INFO - Configuration loaded successfully
+2026-01-16 18:58:23,798 - __main__ - INFO - Email will be sent to: teammarketinglnk@gmail.com, sgarad@zlk.com
+2026-01-16 18:58:23,799 - storage - INFO - Created new storage file: data/seen_urls.json
+2026-01-16 18:58:23,799 - __main__ - INFO - Current storage stats: {'total_urls': 0, 'last_updated': None, 'sources': {}}
+2026-01-16 18:58:23,799 - __main__ - INFO - Total URLs in database: 0
+2026-01-16 18:58:23,799 - __main__ - INFO - Starting URL scraping from all sources...
+2026-01-16 18:58:23,799 - scraper - INFO - Starting scrape for dexpose.io
+2026-01-16 18:58:23,799 - scraper - INFO - Fetching: https://dexpose.io/sitemap-0.xml
+2026-01-16 18:58:31,563 - scraper - INFO - Extracted 11 URLs from dexpose.io sitemap
+2026-01-16 18:58:31,563 - scraper - INFO - Completed scrape for dexpose.io: 11 URLs
+2026-01-16 18:58:33,563 - scraper - INFO - Starting scrape for ransomware.live
+2026-01-16 18:58:33,563 - scraper - INFO - Fetching: https://www.ransomware.live/sitemap.xml
+2026-01-16 18:58:57,085 - scraper - INFO - Extracted 28560 URLs from ransomware.live sitemap
+2026-01-16 18:58:57,086 - scraper - INFO - Completed scrape for ransomware.live: 28560 URLs
+2026-01-16 18:58:59,089 - scraper - INFO - Starting scrape for redpacketsecurity.com
+2026-01-16 18:58:59,089 - scraper - INFO - Fetching: https://www.redpacketsecurity.com/
+2026-01-16 18:58:59,222 - scraper - ERROR - Error fetching https://www.redpacketsecurity.com/: 403 Client Error: Forbidden for url: https://www.redpacketsecurity.com/
+2026-01-16 18:58:59,223 - scraper - INFO - Completed scrape for redpacketsecurity.com: 0 URLs
+2026-01-16 18:59:01,223 - __main__ - INFO - Total URLs scraped: 28571
+2026-01-16 18:59:01,226 - __main__ - INFO - New URLs found: 28571
+2026-01-16 18:59:01,226 - storage - INFO - Added 11 new URLs from dexpose.io
+2026-01-16 18:59:01,302 - storage - INFO - Added 28500 new URLs from ransomware.live
+2026-01-16 18:59:01,303 - __main__ - INFO - Sending email notifications to 2 recipient(s)...
+2026-01-16 18:59:01,303 - __main__ - INFO - Sending to teammarketinglnk@gmail.com...
+2026-01-16 18:59:01,333 - email_sender - INFO - Connecting to SMTP server smtp.gmail.com:587
+2026-01-16 18:59:45,405 - email_sender - INFO - Email sent successfully to teammarketinglnk@gmail.com
+2026-01-16 18:59:45,406 - __main__ - INFO - Email sent successfully to teammarketinglnk@gmail.com
+2026-01-16 18:59:45,407 - __main__ - INFO - Sending to sgarad@zlk.com...
+2026-01-16 18:59:45,436 - email_sender - INFO - Connecting to SMTP server smtp.gmail.com:587
+2026-01-16 19:00:34,172 - email_sender - INFO - Email sent successfully to sgarad@zlk.com
+2026-01-16 19:00:34,175 - __main__ - INFO - Email sent successfully to sgarad@zlk.com
+2026-01-16 19:00:34,175 - __main__ - INFO - Email delivery: 2/2 successful
+2026-01-16 19:00:34,175 - __main__ - INFO - ============================================================
+2026-01-16 19:00:34,175 - __main__ - INFO - Summary:
+2026-01-16 19:00:34,175 - __main__ - INFO -   dexpose.io: 11 new URLs
+2026-01-16 19:00:34,175 - __main__ - INFO -   ransomware.live: 28560 new URLs
+2026-01-16 19:00:34,175 - __main__ - INFO - Total new URLs: 28571
+2026-01-16 19:00:34,175 - __main__ - INFO - ============================================================
+2026-01-16 19:00:34,176 - __main__ - INFO - Daily URL Scraper completed successfully

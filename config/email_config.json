@@ -1,0 +1,14 @@
+{
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "use_ssl": false,
+    "sender_email": "marketing.landk@gmail.com",
+    "sender_password": "zzkg povg qsex fjag",
+    "receiver_emails": [
+        "teammarketinglnk@gmail.com",
+        "sgarad@zlk.com"
+    ],
+    "timeout": 30,
+    "max_retries": 3,
+    "filter_date": "2026-01-14"
+}
