@@ -3285,3 +3285,64 @@
 2026-04-07 07:27:54,093 - main - INFO - ============================================================
 2026-04-07 07:27:54,093 - main - INFO - Completed - 2026-04-07 07:27:54
 2026-04-07 07:27:54,093 - main - INFO - 
+2026-04-08 07:06:40,381 - main - INFO - Logging to: logs/scraper.log (append mode)
+2026-04-08 07:06:40,381 - main - INFO - 
+2026-04-08 07:06:40,381 - main - INFO - ============================================================
+2026-04-08 07:06:40,381 - main - INFO - Starting Daily URL Scraper - 2026-04-08 07:06:40
+2026-04-08 07:06:40,381 - main - INFO - ============================================================
+2026-04-08 07:06:40,381 - main - INFO - Loading configuration from config/email_config.json...
+2026-04-08 07:06:40,381 - main - INFO - Configuration loaded successfully
+2026-04-08 07:06:40,381 - main - INFO - Email will be sent to: teammarketinglnk@gmail.com, sgarad@zlk.com
+2026-04-08 07:06:40,381 - main - INFO - Date filter: Only URLs from 2026-01-14 onwards
+2026-04-08 07:06:40,382 - storage - INFO - Initialized storage for 3 sources in data
+2026-04-08 07:06:40,382 - scraper - INFO - Date filter active: Only URLs from 2026-01-14 onwards
+2026-04-08 07:06:40,382 - main - INFO - Current storage statistics:
+2026-04-08 07:06:40,407 - storage - ERROR - Error decoding JSON from data/redpacket_security_urls.json: Expecting value: line 1 column 1 (char 0)
+2026-04-08 07:06:40,407 - main - INFO -   dexpose.io: 11 URLs in dexpose_urls.json
+2026-04-08 07:06:40,407 - main - INFO -   ransomware.live: 31085 URLs in ransomware_live_urls.json
+2026-04-08 07:06:40,407 - main - INFO -   redpacketsecurity.com: 0 URLs in redpacket_security_urls.json
+2026-04-08 07:06:40,438 - storage - ERROR - Error decoding JSON from data/redpacket_security_urls.json: Expecting value: line 1 column 1 (char 0)
+2026-04-08 07:06:40,438 - main - INFO - Total URLs across all sources: 31096
+2026-04-08 07:06:40,438 - main - INFO - Starting URL scraping from all sources...
+2026-04-08 07:06:40,438 - scraper - INFO - Starting scrape for dexpose.io
+2026-04-08 07:06:40,439 - scraper - INFO - Fetching: https://dexpose.io/sitemap-0.xml
+2026-04-08 07:06:41,318 - scraper - INFO - Extracted 11 URLs from dexpose.io sitemap (filtered out 0 old URLs)
+2026-04-08 07:06:41,318 - scraper - INFO - Completed scrape for dexpose.io: 11 URLs (after filtering)
+2026-04-08 07:06:43,324 - scraper - INFO - Starting scrape for ransomware.live
+2026-04-08 07:06:43,324 - scraper - INFO - Fetching: https://www.ransomware.live/sitemap.xml
+2026-04-08 07:06:52,541 - scraper - INFO - Extracted 31067 URLs from ransomware.live sitemap (filtered out 0 old URLs)
+2026-04-08 07:06:52,542 - scraper - INFO - Completed scrape for ransomware.live: 31067 URLs (after filtering)
+2026-04-08 07:06:54,547 - scraper - INFO - Starting scrape for redpacketsecurity.com
+2026-04-08 07:06:54,547 - scraper - INFO - Fetching: https://www.redpacketsecurity.com/
+2026-04-08 07:06:54,695 - scraper - WARNING - 403 Forbidden for https://www.redpacketsecurity.com/ - Website blocking request
+2026-04-08 07:06:54,695 - scraper - ERROR - Still blocked after retry. Skipping https://www.redpacketsecurity.com/
+2026-04-08 07:06:54,697 - scraper - INFO - Completed scrape for redpacketsecurity.com: 0 URLs (after filtering)
+2026-04-08 07:06:56,698 - main - INFO - Total URLs scraped (after date filtering): 31078
+2026-04-08 07:06:56,768 - storage - ERROR - Error decoding JSON from data/redpacket_security_urls.json: Expecting value: line 1 column 1 (char 0)
+2026-04-08 07:06:56,769 - main - INFO - New URLs found: 28
+2026-04-08 07:06:56,770 - storage - INFO - Added 0 new URLs to dexpose_urls.json
+2026-04-08 07:06:56,770 - main - INFO -   dexpose.io: 0 new URLs added
+2026-04-08 07:06:56,882 - storage - INFO - Added 28 new URLs to ransomware_live_urls.json
+2026-04-08 07:06:56,884 - main - INFO -   ransomware.live: 28 new URLs added
+2026-04-08 07:06:56,884 - main - INFO - Sending email notifications to 2 recipient(s)...
+2026-04-08 07:06:56,884 - main - INFO - Sending to teammarketinglnk@gmail.com...
+2026-04-08 07:06:56,884 - email_sender - INFO - Connecting to SMTP server smtp.gmail.com:587
+2026-04-08 07:07:05,279 - email_sender - INFO - Email sent successfully to teammarketinglnk@gmail.com
+2026-04-08 07:07:05,280 - main - INFO - Email sent successfully to teammarketinglnk@gmail.com
+2026-04-08 07:07:05,280 - main - INFO - Sending to sgarad@zlk.com...
+2026-04-08 07:07:05,281 - email_sender - INFO - Connecting to SMTP server smtp.gmail.com:587
+2026-04-08 07:07:13,585 - email_sender - INFO - Email sent successfully to sgarad@zlk.com
+2026-04-08 07:07:13,586 - main - INFO - Email sent successfully to sgarad@zlk.com
+2026-04-08 07:07:13,586 - main - INFO - Email delivery: 2/2 successful
+2026-04-08 07:07:13,586 - main - INFO - ============================================================
+2026-04-08 07:07:13,586 - main - INFO - Summary:
+2026-04-08 07:07:13,586 - main - INFO -   ransomware.live: 28 new URLs
+2026-04-08 07:07:13,586 - main - INFO - Total new URLs: 28
+2026-04-08 07:07:13,586 - main - INFO - 
+2026-04-08 07:07:13,586 - main - INFO - Storage files updated:
+2026-04-08 07:07:13,586 - main - INFO -   dexpose.io: data/dexpose_urls.json
+2026-04-08 07:07:13,586 - main - INFO -   ransomware.live: data/ransomware_live_urls.json
+2026-04-08 07:07:13,586 - main - INFO -   redpacketsecurity.com: data/redpacket_security_urls.json
+2026-04-08 07:07:13,586 - main - INFO - ============================================================
+2026-04-08 07:07:13,586 - main - INFO - Completed - 2026-04-08 07:07:13
+2026-04-08 07:07:13,587 - main - INFO - 
